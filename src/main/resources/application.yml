@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user.init
+
+data:
+  users:
+  - fname: John
+    lname: Doe
+    birthDate: 1995-01-01
+  - fname: hAnne
+    lname: Smith
+    birthDate: 1985-03-22
