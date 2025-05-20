@@ -5,12 +5,18 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     username: admin
     password: admin
+    driver-class-name: org.postgresql.Driver
   jpa:
     properties:
       hibernate:
-        ddl-auto: auto
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: none
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      schema-locations: schema.sql
+      mode: always
 
 data:
   users:

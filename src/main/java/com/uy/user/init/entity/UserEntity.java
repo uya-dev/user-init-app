@@ -1,15 +1,18 @@
 package com.uy.user.init.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "user_entity")
 public class UserEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String fname;
+
+//    @Column(name = "last_name")
     private String lname;
 
     private String birthDate;
