@@ -11,7 +11,7 @@ spring:
       hibernate:
         ddl-auto: none
 #        dialect: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: true
+    show-sql: false
     defer-datasource-initialization: true
   sql:
     init:
@@ -23,6 +23,12 @@ data:
   - fname: John
     lname: Doe
     birthDate: 1995-01-01
-  - fname: hAnne
+  - fname: Anne
     lname: Smith
     birthDate: 1985-03-22
+  - fname: Harry
+    lname: Lewis
+    birthDate: 1990-06-21
+  - fname: Peter
+    lname: Another
+    birthDate: 2002-10-08
